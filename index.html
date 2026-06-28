@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Second Spine — Restoring Books, Rebuilding Community</title>
+  <meta name="description" content="Second Spine collects torn, damaged, or unwanted books from the community, restores them with new hardcover bindings, and redistributes them to local libraries and neighborhoods." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="intro-mode">
+  <div id="top"></div>
+
+  <!-- ===== Header / Nav ===== -->
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="#top" class="brand" title="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+        <svg class="brand-logo" viewBox="0 0 54 52" width="48" height="46" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="43" width="46" height="6" rx="2" fill="#ffffff18"/>
+          <rect x="5" y="38" width="44" height="9" rx="2.5" fill="#efe7d9"/>
+          <rect x="5" y="38" width="6" height="9" rx="2.5" fill="#d9bcaf"/>
+          <line x1="14" y1="40" x2="46" y2="40" stroke="#c8a29360" stroke-width="1.2"/>
+          <line x1="14" y1="44" x2="46" y2="44" stroke="#c8a29330" stroke-width="1"/>
+          <rect x="8" y="28" width="38" height="9" rx="2.5" fill="#6f3a2c"/>
+          <rect x="8" y="28" width="6" height="9" rx="2.5" fill="#5a2e22"/>
+          <line x1="17" y1="30" x2="43" y2="30" stroke="#ffffff35" stroke-width="1.2"/>
+          <line x1="17" y1="34" x2="43" y2="34" stroke="#ffffff20" stroke-width="1"/>
+          <rect x="3" y="18" width="46" height="9" rx="2.5" fill="#7c8d5f"/>
+          <rect x="3" y="18" width="6" height="9" rx="2.5" fill="#657548"/>
+          <line x1="12" y1="20" x2="46" y2="20" stroke="#ffffff35" stroke-width="1.2"/>
+          <line x1="12" y1="24" x2="46" y2="24" stroke="#ffffff20" stroke-width="1"/>
+          <rect x="7" y="8" width="40" height="9" rx="2.5" fill="#3e5230"/>
+          <rect x="7" y="8" width="6" height="9" rx="2.5" fill="#2f3f25"/>
+          <line x1="16" y1="10" x2="44" y2="10" stroke="#ffffff35" stroke-width="1.2"/>
+          <line x1="16" y1="14" x2="44" y2="14" stroke="#ffffff20" stroke-width="1"/>
+          <rect x="7" y="8" width="2" height="9" rx="1" fill="#ffffff30"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-mark">SECOND</span>
+          <span class="brand-mark">SPINE</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#mission">What We Do</a></li>
+          <li><a href="#impact">Our Impact</a></li>
+          <li><a href="#involved">Get Involved</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="mailto:admin@secondspine.org">Contact</a></li>
+        </ul>
+        <div class="nav-social">
+          <a href="https://instagram.com/secondspineorganization" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="19" height="19"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.38C1.36 2.67.95 3.34.64 4.13.34 4.9.14 5.77.08 7.04.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.12.66.66 1.33 1.07 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.86 5.86 0 0 0 2.12-1.38 5.86 5.86 0 0 0 1.38-2.12c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.86 5.86 0 0 0-1.38-2.12A5.86 5.86 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44Z"/></svg>
+          </a>
+          <a href="mailto:admin@secondspine.org" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="19" height="19"><path fill="currentColor" d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm10 7.2L3.6 6H20.4L12 11.2ZM3 7.9V18h18V7.9l-9 5.6-9-5.6Z"/></svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <!-- Nebula canvas lives here so it persists behind both intro and main hero -->
+  <div id="cb-bg" aria-hidden="true"></div>
+
+  <section class="hero" id="hero-section">
+    <div class="hero-overlay"></div>
+
+    <!-- Book layer — visible immediately, text lives on the cover -->
+    <div class="book-layer visible" id="book-layer" aria-hidden="true">
+      <div class="cb-scene">
+        <div class="cb-wrapper" id="cb-wrapper">
+          <div class="cb-book">
+            <!-- Spine — left 3D face -->
+            <div class="cb-spine"></div>
+            <!-- Page edges — right 3D face -->
+            <div class="cb-edge"></div>
+            <!-- Interior pages (revealed when cover opens) -->
+            <div class="cb-interior"></div>
+            <!-- Pages that flip after cover opens. DOM order = paint order: --7 bottom, --1 top -->
+            <div class="cb-pages-flip">
+              <div class="cb-fp cb-fp--25"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--24"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--23"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--22"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--21"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--20"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--19"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--18"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--17"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--16"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--15"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--14"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--13"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--12"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--11"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--10"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--9"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--8"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--7"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--6"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--5"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--4"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--3"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--2"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+              <div class="cb-fp cb-fp--1"><div class="cb-fp-front"></div><div class="cb-fp-back"></div></div>
+            </div>
+            <!-- Front cover (rotates open around left/spine edge) -->
+            <div class="cb-cover" id="cb-cover">
+              <!-- Exterior face — visible when closed -->
+              <div class="cb-cover-face">
+                <div class="cb-cover-inset"></div>
+                <div class="cb-cover-titles">
+                  <span class="cb-title-word">SECOND</span>
+                  <span class="cb-title-word">SPINE</span>
+                </div>
+                <p class="cb-cover-tagline">Nonprofit &middot; Restored books</p>
+                <p class="cb-cover-stat">We collect discarded books, restore them by hand, and <strong>return them free</strong> to libraries and communities that need them.</p>
+                <button class="get-started-btn" id="get-started-btn">Learn More</button>
+              </div>
+              <!-- Interior face — visible when open -->
+              <div class="cb-cover-inside"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Permanent hero revealed after intro animation -->
+    <div class="hero-site-layer" id="hero-site-layer" aria-hidden="true">
+      <div class="hsl-inner">
+        <p class="hsl-eyebrow">Saratoga, CA &nbsp;·&nbsp; Book Restoration</p>
+        <h1 class="hsl-title" aria-label="Second Spine">
+          <span class="hsl-word">SECOND</span>
+          <span class="hsl-word">SPINE</span>
+        </h1>
+        <div class="hsl-shelf" aria-hidden="true">
+          <div class="hsl-book b1"></div>
+          <div class="hsl-book b2"></div>
+          <div class="hsl-book b3"></div>
+          <div class="hsl-book b4"></div>
+          <div class="hsl-book b5"></div>
+          <div class="hsl-book b6"></div>
+          <div class="hsl-book b7"></div>
+        </div>
+        <p class="hsl-tagline">
+          Every year, millions of books are discarded — torn, damaged, forgotten.<br>
+          We restore them. We return them to the shelves they belong on.
+        </p>
+        <div class="hsl-cta-row">
+          <a href="#mission" class="hsl-btn hsl-ghost">Our Story</a>
+          <a href="https://www.gofundme.com/f/support-second-spine/qr/o?attribution_id=sl:26cdb99f-29e6-4d58-b4ff-e73b4a359507&lang=en_US&ts=1780894651&utm_campaign=man_sharesheet_dash&utm_content=amp17_tb-amp20_t1&utm_medium=customer&utm_source=qr_code" class="hsl-btn hsl-solid" target="_blank" rel="noopener">Donate Today</a>
+        </div>
+      </div>
+      <div class="hsl-scroll" aria-hidden="true">
+        <span class="hsl-scroll-label">Scroll</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Full-screen white flash for the "page fills screen" moment -->
+  </section>
+
+  <!-- ===== 3 Quick CTAs (Martha's Kitchen pattern) ===== -->
+  <section class="quick-cta">
+    <div class="container">
+      <div class="qcta-grid">
+        <a class="qcta-card" href="#mission">
+          <span class="qcta-label">Learn More</span>
+          <span class="qcta-title">About Our Mission</span>
+          <span class="qcta-arrow">→</span>
+        </a>
+        <a class="qcta-card qcta-featured" href="https://www.gofundme.com/f/support-second-spine/qr/o?attribution_id=sl:26cdb99f-29e6-4d58-b4ff-e73b4a359507&lang=en_US&ts=1780894651&utm_campaign=man_sharesheet_dash&utm_content=amp17_tb-amp20_t1&utm_medium=customer&utm_source=qr_code" target="_blank" rel="noopener">
+          <span class="qcta-label">Support Us</span>
+          <span class="qcta-title">Donate to Second Spine Today</span>
+          <span class="qcta-arrow">→</span>
+        </a>
+        <a class="qcta-card" href="https://instagram.com/secondspineorganization" target="_blank" rel="noopener">
+          <span class="qcta-label">Stay Connected</span>
+          <span class="qcta-title">Follow Us on Instagram</span>
+          <span class="qcta-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Mission ===== -->
+  <section class="mission" id="mission">
+    <div class="container">
+      <p class="section-eyebrow">What Do We Do?</p>
+      <h2 class="section-title">
+        We rescue, restore, and return books to the community.
+      </h2>
+      <p class="mission-lead">
+        Our goal is to collect torn up, damaged, or unwanted books from the
+        community. We restore them by binding hardcovers — a
+        &ldquo;second spine&rdquo; — then we redistribute them back to local
+        libraries and neighborhoods.
+      </p>
+
+      <div class="cards three">
+        <article class="card">
+          <div class="card-icon">📚</div>
+          <h3>Collect</h3>
+          <p>We gather damaged and unwanted books donated by people across the community.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🛠️</div>
+          <h3>Restore</h3>
+          <p>In our workshops we bind new hardcovers, giving each book a sturdy second spine.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🤝</div>
+          <h3>Redistribute</h3>
+          <p>Restored books return to local libraries and neighborhoods for everyone to enjoy.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Impact stats ===== -->
+  <section class="impact" id="impact">
+    <div class="container">
+      <p class="section-eyebrow light">Our Impact</p>
+      <h2 class="section-title light">Books deserve a second chapter.</h2>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-num" data-target="1200" data-suffix="+">0</span>
+          <span class="stat-label">Books restored</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-target="15" data-suffix="">0</span>
+          <span class="stat-label">Libraries &amp; neighborhoods served</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-target="40" data-suffix="+">0</span>
+          <span class="stat-label">Volunteers in our workshops</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-target="3" data-suffix="" data-prefix="">0</span>
+          <span class="stat-label">Tons of paper kept from landfill</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Quote / About ===== -->
+  <section class="quote" id="about">
+    <div class="container quote-grid">
+      <div class="quote-art" aria-hidden="true">
+        <div class="book book-1"></div>
+        <div class="book book-2"></div>
+        <div class="book book-3"></div>
+        <div class="book book-4"></div>
+      </div>
+      <blockquote>
+        <p>
+          &ldquo;A worn-out book isn&rsquo;t the end of a story — it&rsquo;s the
+          start of another. By binding a new spine, we give a book the strength
+          to be read again and again, by someone new.&rdquo;
+        </p>
+        <cite>— The Second Spine Team</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ===== Get Involved ===== -->
+  <section class="involved" id="involved">
+    <div class="container">
+      <p class="section-eyebrow">Get Involved</p>
+      <h2 class="section-title">Three ways to give a book new life.</h2>
+
+      <div class="cards three involved-cards">
+        <article class="card support">
+          <h3>Support</h3>
+          <p>Help fund the materials for our nonprofit through our GoFundMe.</p>
+          <a class="btn btn-primary" href="https://www.gofundme.com/f/support-second-spine/qr/o?attribution_id=sl:26cdb99f-29e6-4d58-b4ff-e73b4a359507&lang=en_US&ts=1780894651&utm_campaign=man_sharesheet_dash&utm_content=amp17_tb-amp20_t1&utm_medium=customer&utm_source=qr_code" target="_blank" rel="noopener">Donate Funds</a>
+        </article>
+        <article class="card">
+          <h3>Donate Books</h3>
+          <p>Drop your unwanted books in our donation boxes at the Saratoga Library.</p>
+          <a class="btn btn-ghost" href="#contact">Find a Box</a>
+        </article>
+        <article class="card">
+          <h3>Volunteer</h3>
+          <p>Sign our interest form if you&rsquo;d like to help out in our workshops!</p>
+          <a class="btn btn-ghost" href="#contact">Sign Up</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="brand-mark">SECOND</span>
+        <span class="brand-mark">SPINE</span>
+        <p class="footer-tag">Restoring books, rebuilding community.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/secondspineorganization" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.12 1.38C1.36 2.67.95 3.34.64 4.13.34 4.9.14 5.77.08 7.04.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.12.66.66 1.33 1.07 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.86 5.86 0 0 0 2.12-1.38 5.86 5.86 0 0 0 1.38-2.12c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.86 5.86 0 0 0-1.38-2.12A5.86 5.86 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44Z"/></svg>
+          </a>
+          <a href="mailto:admin@secondspine.org" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm10 7.2L3.6 6H20.4L12 11.2ZM3 7.9V18h18V7.9l-9 5.6-9-5.6Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Get Involved</h4>
+        <ul>
+          <li><a href="https://www.gofundme.com/f/support-second-spine/qr/o?attribution_id=sl:26cdb99f-29e6-4d58-b4ff-e73b4a359507&lang=en_US&ts=1780894651&utm_campaign=man_sharesheet_dash&utm_content=amp17_tb-amp20_t1&utm_medium=customer&utm_source=qr_code" target="_blank" rel="noopener">Support our GoFundMe</a></li>
+          <li><a href="#involved">Donate Books</a></li>
+          <li><a href="#involved">Volunteer</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <ul class="footer-contact">
+          <li>
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Z"/></svg>
+            <a href="https://instagram.com/secondspineorganization" target="_blank" rel="noopener">@secondspineorganization</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm10 7.2L3.6 6H20.4L12 11.2Z"/></svg>
+            <a href="mailto:admin@secondspine.org">admin@secondspine.org</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Stay in the Loop</h4>
+        <p class="footer-tag">Interested in our workshops? Reach out and we&rsquo;ll send you the interest form.</p>
+        <a class="btn btn-outline-light" href="mailto:admin@secondspine.org?subject=Volunteer%20Interest">Email Us</a>
+        <a class="btn btn-outline-light" href="https://www.gofundme.com/f/support-second-spine/qr/o?attribution_id=sl:26cdb99f-29e6-4d58-b4ff-e73b4a359507&lang=en_US&ts=1780894651&utm_campaign=man_sharesheet_dash&utm_content=amp17_tb-amp20_t1&utm_medium=customer&utm_source=qr_code" target="_blank" rel="noopener">GoFundMe</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Second Spine &middot; secondspine.org &middot; A community book-restoration nonprofit.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
