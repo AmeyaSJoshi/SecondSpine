@@ -144,6 +144,111 @@ if (toggle && nav) {
   );
 }
 
+// ===== Find a Box panel toggle =====
+const findBoxBtn = document.getElementById("find-box-btn");
+const findBoxPanel = document.getElementById("find-box-panel");
+if (findBoxBtn && findBoxPanel) {
+  findBoxBtn.addEventListener("click", () => {
+    const isOpen = !findBoxPanel.hidden;
+    if (isOpen) {
+      findBoxPanel.hidden = true;
+      findBoxBtn.textContent = "Find a Box";
+    } else {
+      findBoxPanel.hidden = false;
+      findBoxBtn.textContent = "Hide Map";
+      findBoxPanel.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+  });
+}
+
+// ===== Volunteer modal =====
+const volunteerBtn  = document.getElementById("volunteer-btn");
+const volunteerModal = document.getElementById("volunteer-modal");
+const modalClose    = document.getElementById("modal-close");
+const volunteerForm = document.getElementById("volunteer-form");
+
+function openModal() {
+  volunteerModal.hidden = false;
+  document.body.style.overflow = "hidden";
+  modalClose.focus();
+}
+function closeModal() {
+  volunteerModal.hidden = true;
+  document.body.style.overflow = "";
+}
+
+if (volunteerBtn)  volunteerBtn.addEventListener("click", openModal);
+if (modalClose)    modalClose.addEventListener("click", closeModal);
+if (volunteerModal) {
+  volunteerModal.addEventListener("click", (e) => {
+    if (e.target === volunteerModal) closeModal();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !volunteerModal.hidden) closeModal();
+  });
+}
+
+if (volunteerForm) {
+  volunteerForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name    = document.getElementById("v-name").value.trim();
+    const email   = document.getElementById("v-email").value.trim();
+    const message = document.getElementById("v-message").value.trim();
+    const subject = encodeURIComponent("Volunteer Interest — " + name);
+    const body    = encodeURIComponent(
+      "Name: " + name + "\nEmail: " + email + "\n\n" + (message || "(no message)")
+    );
+    window.location.href = "mailto:admin@secondspine.org?subject=" + subject + "&body=" + body;
+    closeModal();
+  });
+}
+
+// ===== Partnership / Contact modal =====
+const contactBtn   = document.getElementById("contact-btn");
+const contactModal = document.getElementById("contact-modal");
+const contactClose = document.getElementById("contact-modal-close");
+const contactForm  = document.getElementById("contact-form");
+
+function openContactModal() {
+  contactModal.hidden = false;
+  document.body.style.overflow = "hidden";
+  contactClose.focus();
+}
+function closeContactModal() {
+  contactModal.hidden = true;
+  document.body.style.overflow = "";
+}
+
+if (contactBtn)   contactBtn.addEventListener("click", openContactModal);
+if (contactClose) contactClose.addEventListener("click", closeContactModal);
+if (contactModal) {
+  contactModal.addEventListener("click", (e) => {
+    if (e.target === contactModal) closeContactModal();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !contactModal.hidden) closeContactModal();
+  });
+}
+
+if (contactForm) {
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name    = document.getElementById("c-name").value.trim();
+    const org     = document.getElementById("c-org").value.trim();
+    const email   = document.getElementById("c-email").value.trim();
+    const message = document.getElementById("c-message").value.trim();
+    const subject = encodeURIComponent("Partnership Inquiry — " + (org || name));
+    const body    = encodeURIComponent(
+      "Name: " + name +
+      (org ? "\nOrganization: " + org : "") +
+      "\nEmail: " + email +
+      "\n\n" + (message || "(no message)")
+    );
+    window.open("mailto:admin@secondspine.org?subject=" + subject + "&body=" + body);
+    closeContactModal();
+  });
+}
+
 // Footer year
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
@@ -268,6 +373,7 @@ if ("IntersectionObserver" in window) {
 
         setTimeout(() => {
           bookLayer.style.opacity = "0";
+          bookLayer.style.pointerEvents = "none";
           if (siteLayer) {
             siteLayer.classList.add("visible");
             siteLayer.removeAttribute("aria-hidden");
